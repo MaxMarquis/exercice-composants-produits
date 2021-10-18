@@ -1,0 +1,11 @@
+:host {
+  background-color: rgb(56, 165, 255);
+  display: flex;
+  margin-left: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+p {
+  padding: 5px;
+}

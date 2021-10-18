@@ -1,0 +1,10 @@
+:host {
+  background-color: rgb(213, 166, 189);
+  display: block;
+  border: 1px solid black;
+  width: 45rem;
+}
+
+p {
+  border: 1px solid black;
+}

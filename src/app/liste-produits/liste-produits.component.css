@@ -1,0 +1,9 @@
+:host {
+  background-color: rgb(253, 255, 118);
+  display: block;
+  padding: 10px;
+}
+
+p {
+  margin: 0;
+}
