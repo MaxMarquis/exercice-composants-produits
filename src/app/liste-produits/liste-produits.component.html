@@ -1,6 +1,2 @@
 <p>Liste produits</p>
-<!-- <app-fiche-produit [produit]="produit1"></app-fiche-produit>
-<app-fiche-produit [produit]="produit2"></app-fiche-produit> -->
-<div *ngFor="let produit of produits">
-  <app-fiche-produit [produit]="produit"></app-fiche-produit>
-</div>
+<app-fiche-produit *ngFor="let produit of produits" [produit]="produit"></app-fiche-produit>

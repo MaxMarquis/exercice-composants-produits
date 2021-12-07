@@ -1,7 +1,10 @@
-<p>Fiche produit</p>
-<app-image></app-image>
-<app-nom-description [produit]="produit"></app-nom-description>
-<div>
-  <app-prix [prix]="produit.prix"></app-prix>
-  <app-lien-details></app-lien-details>
+<span *ngIf="produit.qteStock >= 1 && produit.qteStock <= 5">Quantités Limitée!</span>
+<span *ngIf="produit.qteStock == 0">Non Disponible</span>
+<div class="flex" *ngIf="produit">
+  <app-image></app-image>
+  <app-nom-description [nom]="produit.nom" [description]="produit.description"></app-nom-description>
+  <div class="blocDroite">
+    <app-prix [prix]="produit.prix"></app-prix>
+    <app-lien-details></app-lien-details>
+  </div>
 </div>

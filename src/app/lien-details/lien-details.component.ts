@@ -3,9 +3,10 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-lien-details',
   templateUrl: './lien-details.component.html',
-  styleUrls: ['./lien-details.component.css']
+  styleUrls: ['../shared/shared.css', './lien-details.component.css']
 })
 export class LienDetailsComponent implements OnInit {
+  lien = "https://github.com/MaxMarquis"
 
   constructor() { }
 

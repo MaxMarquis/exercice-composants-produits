@@ -1,1 +1,12 @@
-<p>Entête</p>
+<mat-toolbar>
+  <span>Entête</span>
+  <div class="droite">
+    <button mat-icon-button class="menu-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <!-- Bloc de droite -->
+    <div *ngIf="router.url !== '/'; then thenBlock else elseBlock"></div>
+    <ng-template #thenBlock><a routerLink="/">Home</a></ng-template>
+    <ng-template #elseBlock><a routerLink="/tableau">Tableau</a></ng-template>
+  </div>
+</mat-toolbar>

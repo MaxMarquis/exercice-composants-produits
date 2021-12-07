@@ -1,11 +1,6 @@
 :host {
   background-color: rgb(244, 204, 204);
   display: block;
-  width: 90px;
-  height: 80px;
-  margin-left: 10px;
-}
-
-p {
-  padding: 30px 5px;
+  min-width: 100px;
+  flex-grow: 1;
 }

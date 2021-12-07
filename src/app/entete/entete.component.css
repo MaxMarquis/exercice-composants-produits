@@ -1,5 +1,19 @@
-p {
+:host {
+  display: block;
   background-color: rgb(195, 235, 156);
   border: 2px solid black;
-  padding: 6px;
+}
+
+mat-toolbar {
+  background-color: rgb(195, 235, 156);
+  justify-content: space-between;
+}
+
+.menu-icon {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.droite a {
+  margin-left: 1rem;
 }

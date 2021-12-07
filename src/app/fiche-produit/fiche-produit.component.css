@@ -1,11 +1,14 @@
 :host {
   background-color: rgb(56, 165, 255);
-  display: flex;
-  margin-left: 10px;
-  border: 1px solid black;
-  margin-top: 10px;
+  display: block;
 }
 
-p {
-  padding: 5px;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocDroite {
+  flex-grow: 1;
+  min-width: 100px;
 }
