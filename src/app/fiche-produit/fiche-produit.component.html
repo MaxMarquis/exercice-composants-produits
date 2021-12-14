@@ -1,4 +1,6 @@
-<span *ngIf="produit.qteStock >= 1 && produit.qteStock <= 5">Quantités Limitée!</span>
+<!-- s'affiche seulement avec les infos du mock, mais pas avec mon api -->
+<div>Quantités: {{produit.qteStock}}</div>
+<div *ngIf="isBetween">Quantités Limitée!</div>
 <span *ngIf="produit.qteStock == 0">Non Disponible</span>
 <div class="flex" *ngIf="produit">
   <app-image></app-image>

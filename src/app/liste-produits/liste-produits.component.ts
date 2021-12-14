@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ProduitService } from '../produit.service';
 import { PRODUITS } from '../mock-produits';
 import { Produit } from '../produit';
@@ -9,10 +9,17 @@ import { Produit } from '../produit';
   styleUrls: ['../shared/shared.css', './liste-produits.component.css']
 })
 export class ListeProduitsComponent implements OnInit {
-  @Input() produits: Produit[] = PRODUITS;
+  produits: Produit[] = [];
+  constructor(private service: ProduitService) { }
 
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getDataFromApi();
+  }
+  getDataFromApi() {
+    this.service.getData().subscribe((res) => {
+      this.produits = res;
+    }, () => {
+      this.produits = PRODUITS
+    })
   }
 }
